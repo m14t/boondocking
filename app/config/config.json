@@ -1,0 +1,16 @@
+{
+    "services": {
+        "\\Silex\\Provider\\ServiceControllerServiceProvider": {},
+        "\\Silex\\Provider\\TwigServiceProvider": {
+            "values": {
+                "twig.path": "%__DIR__%/Resources/views"
+            }
+        },
+        "\\Silex\\Provider\\UrlGeneratorServiceProvider": {},
+        "\\Silex\\Provider\\WebProfilerServiceProvider": {
+            "values": {
+                "profiler.cache_dir": "%__DIR__%/../cache/profiler"
+            }
+        }
+    }
+}
