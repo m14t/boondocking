@@ -17,6 +17,11 @@
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
         {% block css %}
+            <style type="text/css">
+                html { height: 100% }
+                body { height: 100%; margin: 0; padding: 0 }
+                #map-canvas { height: 100% }
+            </style>
         {% endblock %}
 
         {% block javascripts_head %}
@@ -28,10 +33,14 @@
         <![endif]-->
 
         {% block content %}
+            <div id="map-canvas" />
         {% endblock %}
 
         {% block javascripts %}
             <script src="/vendor/jquery/dist/jquery.min.js"></script>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ config.google.apiKey }}&sensor=false">
+            </script>
+            <script src="/js/main.js"></script>
         {% endblock %}
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
