@@ -1,6 +1,9 @@
 {
     "boondocking": {
-        "dataFile": "%__DIR__%/data/POI.csv"
+        "dataFile": "%__DIR__%/data/POI.csv",
+        "google": {
+            "apiKey": "AIzaSyAUUjch7XtLMHM2hGUPsFDHfS3czPNl1Wg"
+        }
     },
     "services": {
         "\\Silex\\Provider\\ServiceControllerServiceProvider": {},
