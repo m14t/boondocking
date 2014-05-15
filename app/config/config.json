@@ -1,4 +1,7 @@
 {
+    "boondocking": {
+        "dataFile": "%__DIR__%/data/POI.csv"
+    },
     "services": {
         "\\Silex\\Provider\\ServiceControllerServiceProvider": {},
         "\\Silex\\Provider\\TwigServiceProvider": {
