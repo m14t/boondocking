@@ -11,6 +11,12 @@
             "values": {
                 "profiler.cache_dir": "%__DIR__%/../cache/profiler"
             }
+        },
+        "\\JMS\\SerializerServiceProvider\\SerializerServiceProvider": {
+            "values": {
+                "serializer.src_directory": "%__DIR__%/../vendor/jms/serializer-bundle/",
+                "serializer.cache.directory": "%__DIR__%/../cache/serializer"
+            }
         }
     }
 }
