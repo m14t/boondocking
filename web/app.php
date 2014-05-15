@@ -10,7 +10,8 @@ if (!isset($silexOptions)) {
 $app = new Boondocking\AppKernel($silexOptions);
 
 $app->get('/', function () use ($app) {
-    return 'Hello';
+    return $app['twig']->render('layout.html.twig', array(
+    ));
 });
 
 $app->run();

@@ -30,5 +30,7 @@ module.exports = function(grunt) {
     //-- Load plugins.
     _matchdep.filter('grunt-*').forEach(grunt.loadNpmTasks);
 
-    grunt.registerTask('default', []);
+    grunt.registerTask('default', [
+        'watch'
+    ]);
 };

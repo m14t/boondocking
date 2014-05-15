@@ -1,0 +1,12 @@
+{
+    "bower": {
+        "install": {
+        }
+    },
+    "watch": {
+        "bower": {
+            "files": "bower.json",
+            "tasks": "bower:install"
+        }
+    }
+}
