@@ -34,5 +34,12 @@ class AppKernel extends \Silex\Application
                 );
             }
         }
+
+        $this
+            ->mount(
+                '/api/locations',
+                new \Boondocking\LocationBundle\Controller\Provider\LocationApiControllerProvider()
+            )
+        ;
     }
 }
