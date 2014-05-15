@@ -35,6 +35,12 @@ class AppKernel extends \Silex\Application
             }
         }
 
+        $this['twig'] = $this->share($this->extend('twig', function($twig, $app) {
+            $twig->addGlobal('config', $app['boondocking']);
+
+            return $twig;
+        }));
+
         $this
             ->mount(
                 '/api/locations',
